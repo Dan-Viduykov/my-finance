@@ -1,0 +1,9 @@
+@import '@/styles/main.scss';
+
+.main {
+    max-width: 720px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 32px 24px 16px;
+    background: $gray80;
+}

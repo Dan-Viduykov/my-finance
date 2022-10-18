@@ -1,9 +1,18 @@
 import type { NextPage } from 'next'
-import Paragraph from '@/components/UI/Paragraph'
+import {default as HomeScreen} from '@/components/screens/Home'
+import Header from '@/components/Header'
+import Container from '@/components/Container'
+import NavigationBar from '@/components/NavigationBar'
 
 const Home: NextPage = () => {
   return (
-    <Paragraph textStyle='ft__6'>HomePage</Paragraph>
+    <>
+      <Container>
+        <Header />
+        <HomeScreen />
+        <NavigationBar />
+      </Container>
+    </>
   )
 }
 
