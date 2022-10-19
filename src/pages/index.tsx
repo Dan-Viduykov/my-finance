@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Container>
-        <Header leftIcon='iconBack' rightIcon='iconGear' label='header' />
+        <Header rightIcon='iconGear' />
         <HomeScreen />
         <NavigationBar />
       </Container>
