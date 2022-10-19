@@ -17,7 +17,11 @@ const subs = [
     {image: logoYoutube, title: 'YouTube Premium', price: 18.99}
 ]
 
-const SubscriptionList: FC = () => {
+interface SubscriptionListProps {
+    className?: string;
+}
+
+const SubscriptionList: FC<SubscriptionListProps> = ({className}) => {
 
     const listItems = subs.map((sub, index) => {
         return (
@@ -28,7 +32,7 @@ const SubscriptionList: FC = () => {
     })
 
     return (
-        <ul className={styles.list}>
+        <ul className={`${styles.list} ${className}`}>
             {listItems}
         </ul>
     )

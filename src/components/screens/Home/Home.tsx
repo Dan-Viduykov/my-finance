@@ -6,10 +6,10 @@ import styles from "./Home.module.scss";
 const Home: FC = () => {
     return (
         <div>
-            <div className={styles.details}></div>
+            <div className={`${styles.details} ${styles.topSection}`}></div>
             <div className={styles.content}>
-                <SubscriptionListMods />
-                <SubscriptionsList /> 
+                <SubscriptionListMods className={styles.modeList} />
+                <SubscriptionsList className={styles.subList} /> 
             </div>
         </div>
     )
