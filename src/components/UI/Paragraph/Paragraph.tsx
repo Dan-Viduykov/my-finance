@@ -30,3 +30,5 @@ const Paragraph: FC<PropsWithChildren<ParagraphProps>> = (props) => {
 }
 
 export default Paragraph
+
+// todo сделать так, чтобы был не только текст, но и заголовки

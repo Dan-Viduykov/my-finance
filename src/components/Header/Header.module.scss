@@ -1,1 +1,26 @@
 @import '@/styles/main.scss';
+
+.header {
+    min-height: 24px;
+    position: relative;
+    text-align: center;
+    color: $gray30;
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 0;
+}
+
+.icon {
+    font-size: 24px;
+    color: $gray30;
+}
+
+.left { left: 0; }
+.right { right: 0; }
+
+.button {
+    background: transparent;
+}
