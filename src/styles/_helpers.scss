@@ -1,9 +1,22 @@
 @import '@/styles/_colors.scss';
 
 .topSection {
-    background: $gray70;
-    opacity: 0.5;
-    border-radius: 0px 0px 24px 24px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: calc(100% + 48px);
+        height: calc(100% + 56px);
+        margin: -56px 0 0 -24px;
+        background: $gray70;
+        border-radius: 0px 0px 24px 24px;
+        opacity: 0.5;
+    }
+
+    & > * {
+        z-index: 2;
+    }
 }
 
 .gradientBorder {

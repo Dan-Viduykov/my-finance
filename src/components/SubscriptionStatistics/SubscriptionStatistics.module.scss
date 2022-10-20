@@ -1,1 +1,34 @@
-@import '@/styles/main.scss'
+@import '@/styles/main.scss';
+
+.list {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 8px;
+}
+
+.item {
+    padding: 16px 0;
+    position: relative;
+    background: rgba($gray60, 0.2);
+    border-radius: 16px;
+    text-align: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 25%;
+        width: 50%;
+        height: 1px;
+        background: plum;
+    }
+}
+
+.description {
+    color: $gray40;
+    margin-bottom: 2px;
+}
+
+.value {
+    color: $white;
+}

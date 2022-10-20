@@ -25,7 +25,7 @@ const Paragraph: FC<PropsWithChildren<ParagraphProps>> = (props) => {
     const {children, textStyle = 'ft__2', className, ...rest} = props;
 
     return (
-        <p className={`${className} ${styles[textStyle]}`} {...rest}>{children}</p>
+        <p className={`${styles[textStyle]} ${className}`} {...rest}>{children}</p>
     )
 }
 

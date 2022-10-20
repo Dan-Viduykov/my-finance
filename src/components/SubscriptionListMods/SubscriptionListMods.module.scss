@@ -1,1 +1,30 @@
 @import '@/styles/main.scss';
+
+.modesList {
+    padding: 7px 10px;
+    background: $gray100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.input {
+    display: none;
+    
+    &[type="radio"]:checked+label {
+        @extend .gradientBorder;
+        
+        color: $white;
+        background: rgb(207,207,252);
+        background: linear-gradient(90deg, rgba(207,207,252,0.15) 0%, rgba(207,207,252,0) 100%);
+    }
+}
+
+.label {
+    padding: 10px 23px;
+    border-radius: 16px;
+    color: $gray30;
+    display: block;
+    position: relative;
+}
