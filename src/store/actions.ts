@@ -1,0 +1,1 @@
+export { addSubscription } from '@/store/reducers/subscriptions/slice';
